@@ -6,13 +6,19 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "autoprefixer": "^10.0.2",
+    "postcss": "^8.1.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
+    "tailwindcss": "^2.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "build:tailwind": "tailwindcss build src/index.css -o src/output.css",
+    "prestart": "yarn run build:tailwind",
     "start": "react-scripts start",
+    "prebuild": "NODE_ENV=production yarn run build:tailwind",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
