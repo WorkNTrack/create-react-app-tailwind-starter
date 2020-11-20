@@ -1,6 +1,8 @@
 # create-react-app + tailwindcss(purge enabled for production)
 ##### This is a boilerplate containing CRA integrated with tailwindcss.
 
+<img src="https://i.ibb.co/MhgzZfR/Screenshot-2020-11-20-at-6-06-31-PM.png" alt="screenshot"/>
+
 ### Usage
 
 ```bash
