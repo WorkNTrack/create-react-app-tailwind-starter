@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .animated-card {
+    @apply px-8 py-4 bg-gradient-to-r from-gray-100 to-gray-200 rounded-md shadow-2xl font-semibold text-xl hover:shadow transition;
+  }
+}
